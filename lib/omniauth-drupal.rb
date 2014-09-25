@@ -3,6 +3,6 @@ require "omniauth/strategies/drupal"
 
 module Omniauth
   module Drupal
-    # Your code goes here...
+
   end
 end

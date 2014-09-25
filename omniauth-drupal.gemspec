@@ -1,7 +1,6 @@
 # coding: utf-8
-$:.push File.expand_path("../lib", __FILE__)
-# lib = File.expand_path('../lib', __FILE__)
-# $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'omniauth-drupal/version'
 
 Gem::Specification.new do |spec|

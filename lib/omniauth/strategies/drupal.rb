@@ -123,7 +123,7 @@ module OmniAuth
       end
 
       def get_user_info(token, member_id)
-        request_log = "Drupal Authentication Request:\nPOST #{user_info_url}, token: #{token}"
+        request_log = "Drupal Authentication Request:\nPOST #{user_info_url}, token: #{Provider::SECURITY_MASK}"
         @app_event.logs.create(level: 'info', text: request_log)
         response = Typhoeus.post(user_info_url,
           body: { uid: member_id },
